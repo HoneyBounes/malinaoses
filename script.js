@@ -30,6 +30,10 @@ var interval = setInterval(function(){
     var random = Math.random();
     random *= Math.round(Math.random()) ? 1 : -1;
     cdeonica1 += random;
+    if(cdeonica1<-1)
+    {
+        cdeonica1 += 4;
+    }
     document.getElementById("cdeonica1").innerHTML = cdeonica1.toFixed(2);
 },5000);
 
@@ -37,6 +41,10 @@ var interval = setInterval(function(){
     var random1 = Math.random();
     random1 *= Math.round(Math.random()) ? 1 : -1;
     cdeonica2 += random1;
+    if(cdeonica2<-1)
+    {
+        cdeonica2 += 5;
+    }
     document.getElementById("cdeonica2").innerHTML = cdeonica2.toFixed(2);
 },5000);
 
@@ -44,6 +52,10 @@ var interval = setInterval(function(){
     var random2 = Math.random();
     random2 *= Math.round(Math.random()) ? 1 : -1;
     cdeonica3 += random2;
+    if(cdeonica3<-1)
+    {
+        cdeonica3 += 6;
+    }
     document.getElementById("cdeonica3").innerHTML = cdeonica3.toFixed(2);
 },5000);
 
