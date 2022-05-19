@@ -17,8 +17,6 @@ var cdeonica1 = 1;
 var cdeonica2 = 2;
 var cdeonica3 = 3;
 
-
-
 //interval popunjavanja
 var timeout = setTimeout(function(){
     document.getElementById("cdeonica1").innerHTML = cdeonica1;
