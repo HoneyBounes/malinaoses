@@ -34,6 +34,10 @@ var interval = setInterval(function(){
     {
         cdeonica1 += 4;
     }
+    if(cdeonica1>13)
+    {
+        cdeonica1 -= 6;
+    }
     document.getElementById("cdeonica1").innerHTML = cdeonica1.toFixed(2);
 },5000);
 
@@ -43,7 +47,11 @@ var interval = setInterval(function(){
     cdeonica2 += random1;
     if(cdeonica2<-1)
     {
-        cdeonica2 += 5;
+        cdeonica2 += 4;
+    }
+    if(cdeonica2>13)
+    {
+        cdeonica2 -= 6;
     }
     document.getElementById("cdeonica2").innerHTML = cdeonica2.toFixed(2);
 },5000);
@@ -54,7 +62,11 @@ var interval = setInterval(function(){
     cdeonica3 += random2;
     if(cdeonica3<-1)
     {
-        cdeonica3 += 6;
+        cdeonica3 += 4;
+    }
+    if(cdeonica3>13)
+    {
+        cdeonica3 -= 6;
     }
     document.getElementById("cdeonica3").innerHTML = cdeonica3.toFixed(2);
 },5000);

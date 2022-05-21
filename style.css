@@ -1,26 +1,47 @@
-
-
 h4 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: darkgreen;
-  }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(36, 27, 124);
+}
 
 a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: darkgreen;
-  }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkgreen;
+}
 
 .square{
-  height: 180;
-  width: 800;
-  background-color: red;
+height: 180;
+width: 800;
+background-color: red;
 }
 
 p1
 {
-   text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(114, 22, 22);
-    font-size: 20px;
+ text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(114, 22, 22);
+  font-size: 20px;
 
+}
+
+
+.item1 { grid-area: deonica1; }
+.item2 { grid-area: deonica2 }
+.item3 { grid-area: deonica3; }
+.item4 { grid-area: novcanik;}
+
+.grid-container {
+display: grid;
+grid-template-areas:
+  'novcanik deonica1 deonica2 deonica3'
+  ;
+gap: 1px;
+background-color: #212385;
+padding: 10px;
+}
+
+.grid-container > div {
+background-color: rgba(255, 255, 255, 0.8);
+text-align: center;
+padding: 20px;
+font-size: 20px;
 }

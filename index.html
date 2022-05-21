@@ -9,44 +9,41 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
-  <img id ="slika1" src="img/deonica1.jpg" align="left"></img>
-  <img id ="slika2" src="img/deonica2.jpg" align="left"></img>
-  <img id ="slika3" src="img/deonica3.jpg" align="left"></img>
+  <div class="grid-container">
 
-  <img id ="slika13" src="img/pdeonica3.jpg" align="right"></img>
-  <img id ="slika12" src="img/pdeonica2.jpg" align="right"></img>
-  <img id ="slika11" src="img/pdeonica1.jpg" align="right"></img>
+    <div class="item1">
+      <h4 style="text-align: center;">Broj deonica 1</h4>
+      <p style="text-align: center;" id="brdeonica1">0</p>
+      <h4 style="text-align: center;">Cena deonice 1</h4>
+      <p style="text-align: center;" id="cdeonica1"></p>
+      <img id ="slika1" src="img/kupi.jpg"></img>
+      <img id ="slika11" src="img/prodaj.jpg"></img>
+    </div>
 
+    <div class="item2">
+      <h4 style="text-align: center;">Broj deonica 2</h4>
+      <p style="text-align: center;" id="brdeonica2">0</p>
+      <h4 style="text-align: center;">Cena deonice 2</h4>
+      <p style="text-align: center;" id="cdeonica2"></p>
+      <img id ="slika2" src="img/kupi.jpg"></img>
+      <img id ="slika12" src="img/prodaj.jpg"></img>
+    </div>
 
-  <table style="width:50%" border="1" align="center">
-<tc>
-  <td><h4 style="text-align: center;">Novčanik</h4>
-  <p style="text-align: center;" id="novcanik"></p></td>
-</tc>
+    <div class="item3">
+      <h4 style="text-align: center;">Broj deonica 3</h4>
+      <p style="text-align: center;" id="brdeonica3">0</p>
+      <h4 style="text-align: center;">Cena deonice 3</h4>
+      <p style="text-align: center;" id="cdeonica3"></p>
+      <img id ="slika3" src="img/kupi.jpg"></img>
+      <img id ="slika13" src="img/prodaj.jpg"></img>
+    </div>  
 
-<tc>
-  <td><h4 style="text-align: center;">Broj deonica 1</h4>
- <p style="text-align: center;" id="brdeonica1">0</p>
- <h4 style="text-align: center;">Cena deonice 1</h4>
- <p style="text-align: center;" id="cdeonica1"></p></td>
-</tc>
-
-<tc>
-  <td><h4 style="text-align: center;">Broj deonica 2</h4>
- <p style="text-align: center;" id="brdeonica2">0</p>
- <h4 style="text-align: center;">Cena deonice 2</h4>
- <p style="text-align: center;" id="cdeonica2"></p></td>
-</tc>
-
-<tc>
-  <td><h4 style="text-align: center;">Broj deonica 3</h4>
-  <p style="text-align: center;" id="brdeonica3">0</p>
-  <h4 style="text-align: center;">Cena deonice 3</h4>
-  <p style="text-align: center;" id="cdeonica3"></p></td>
-</tc>
-
-  </table>
-  <h1 style="text-align: center; color: rgb(64, 100, 28);">NA SVAKIH 5 SEKUNDI SE MENJAJU CENE BERZE</h1>
+    <div class="item4">
+      <h4 style="text-align: center;">Novčanik</h4>
+      <p style="text-align: center;" id="novcanik"></p>
+    </div>
+</div>
+  <h1 style="text-align: center; color: rgb(23, 29, 122);">Cene berze se menjaju na svakih 5 sekundi.</h1>
   <script src="script.js"></script>
 </body>
 </html>
