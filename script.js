@@ -1,3 +1,10 @@
+//overlay
+function off() {
+    document.getElementById("overlay").style.display = "none";
+    bool = true;
+  }
+document.getElementById("overlay").style.display = "block";
+
 //slike - prebaciti u mapping sto pre!!
 var deonica1slika = document.getElementById("slika1");
 var deonica2slika = document.getElementById("slika2");
@@ -9,6 +16,7 @@ var pdeonica2slika = document.getElementById("slika12");
 var pdeonica3slika = document.getElementById("slika13");
 
 //varijable
+var bool = false;
 var novcanik = 10;
 var deonica1 = 0;
 var deonica2 = 0;
@@ -27,6 +35,7 @@ var timeout = setTimeout(function(){
 
 //interval menjanja cena
 var interval = setInterval(function(){
+    if(bool==true){
     var random = Math.random();
     random *= Math.round(Math.random()) ? 1 : -1;
     cdeonica1 += random;
@@ -39,9 +48,11 @@ var interval = setInterval(function(){
         cdeonica1 -= 6;
     }
     document.getElementById("cdeonica1").innerHTML = cdeonica1.toFixed(2);
+}
 },5000);
 
 var interval = setInterval(function(){
+    if(bool==true){
     var random1 = Math.random();
     random1 *= Math.round(Math.random()) ? 1 : -1;
     cdeonica2 += random1;
@@ -54,9 +65,11 @@ var interval = setInterval(function(){
         cdeonica2 -= 6;
     }
     document.getElementById("cdeonica2").innerHTML = cdeonica2.toFixed(2);
+}
 },5000);
 
 var interval = setInterval(function(){
+    if(bool==true){
     var random2 = Math.random();
     random2 *= Math.round(Math.random()) ? 1 : -1;
     cdeonica3 += random2;
@@ -69,6 +82,7 @@ var interval = setInterval(function(){
         cdeonica3 -= 6;
     }
     document.getElementById("cdeonica3").innerHTML = cdeonica3.toFixed(2);
+}
 },5000);
 
 //kupovina deonica
