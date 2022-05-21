@@ -17,7 +17,7 @@ var pdeonica3slika = document.getElementById("slika13");
 
 //varijable
 var bool = false;
-var novcanik = 10;
+var novcanik = 5;
 var deonica1 = 0;
 var deonica2 = 0;
 var deonica3 = 0;
