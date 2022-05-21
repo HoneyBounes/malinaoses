@@ -5,12 +5,12 @@ function off() {
   }
 document.getElementById("overlay").style.display = "block";
 
-//slike - prebaciti u mapping sto pre!!
+//slike kupovine
 var deonica1slika = document.getElementById("slika1");
 var deonica2slika = document.getElementById("slika2");
 var deonica3slika = document.getElementById("slika3");
 
-//slike - prebaciti u mapping sto pre!!
+//slike prodjae
 var pdeonica1slika = document.getElementById("slika11");
 var pdeonica2slika = document.getElementById("slika12");
 var pdeonica3slika = document.getElementById("slika13");
@@ -27,10 +27,10 @@ var cdeonica3 = 3;
 
 //interval popunjavanja
 var timeout = setTimeout(function(){
-    document.getElementById("cdeonica1").innerHTML = cdeonica1;
-    document.getElementById("cdeonica2").innerHTML = cdeonica2;
-    document.getElementById("cdeonica3").innerHTML = cdeonica3;
-    document.getElementById("novcanik").innerHTML = novcanik;
+    document.getElementById("cdeonica1").innerHTML = cdeonica1 + "&#128176;";
+    document.getElementById("cdeonica2").innerHTML = cdeonica2 + "&#128176;";
+    document.getElementById("cdeonica3").innerHTML = cdeonica3 + "&#128176;";
+    document.getElementById("novcanik").innerHTML = novcanik + "&#128176;";
 },1);
 
 //interval menjanja cena
@@ -47,7 +47,7 @@ var interval = setInterval(function(){
     {
         cdeonica1 -= 6;
     }
-    document.getElementById("cdeonica1").innerHTML = cdeonica1.toFixed(2);
+    document.getElementById("cdeonica1").innerHTML = cdeonica1.toFixed(2) + "&#128176;";
 }
 },5000);
 
@@ -64,7 +64,7 @@ var interval = setInterval(function(){
     {
         cdeonica2 -= 6;
     }
-    document.getElementById("cdeonica2").innerHTML = cdeonica2.toFixed(2);
+    document.getElementById("cdeonica2").innerHTML = cdeonica2.toFixed(2) + "&#128176;";
 }
 },5000);
 
@@ -81,7 +81,7 @@ var interval = setInterval(function(){
     {
         cdeonica3 -= 6;
     }
-    document.getElementById("cdeonica3").innerHTML = cdeonica3.toFixed(2);
+    document.getElementById("cdeonica3").innerHTML = cdeonica3.toFixed(2) + "&#128176;";
 }
 },5000);
 
@@ -91,7 +91,7 @@ deonica1slika.onclick = function(){
     deonica1 += 1;
     document.getElementById("brdeonica1").innerHTML = deonica1;
     novcanik -= cdeonica1;
-    document.getElementById("novcanik").innerHTML = novcanik.toFixed(2);
+    document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     }
 }
 
@@ -100,7 +100,7 @@ deonica2slika.onclick = function(){
     deonica2 += 1;
     document.getElementById("brdeonica2").innerHTML = deonica2;
     novcanik -= cdeonica2;
-    document.getElementById("novcanik").innerHTML = novcanik.toFixed(2);
+    document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     }
 }
 
@@ -109,7 +109,7 @@ deonica3slika.onclick = function(){
     deonica3 += 1;
     document.getElementById("brdeonica3").innerHTML = deonica3;
     novcanik -= cdeonica3;
-    document.getElementById("novcanik").innerHTML = novcanik.toFixed(2);
+    document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     }
 }
 
@@ -119,7 +119,7 @@ pdeonica1slika.onclick = function(){
     deonica1 -= 1;
     document.getElementById("brdeonica1").innerHTML = deonica1;
     novcanik += cdeonica1;
-    document.getElementById("novcanik").innerHTML = novcanik.toFixed(2);
+    document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     }
 }
 
@@ -128,7 +128,7 @@ pdeonica2slika.onclick = function(){
     deonica2 -= 1;
     document.getElementById("brdeonica2").innerHTML = deonica2;
     novcanik += cdeonica2;
-    document.getElementById("novcanik").innerHTML = novcanik.toFixed(2);
+    document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     }
 }
 
@@ -137,6 +137,6 @@ pdeonica3slika.onclick = function(){
     deonica3 -= 1;
     document.getElementById("brdeonica3").innerHTML = deonica3;
     novcanik += cdeonica3;
-    document.getElementById("novcanik").innerHTML = novcanik.toFixed(2);
+    document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     }
 }

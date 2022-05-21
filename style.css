@@ -32,7 +32,7 @@ background-color: red;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.911);
   z-index: 2;
   cursor: pointer;
 }
@@ -40,7 +40,18 @@ background-color: red;
 #text{
   position: absolute;
   display: block;
-  top: 50%;
+  top: 10%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#text1{
+  position: absolute;
+  display: block;
+  top: 25%;
   left: 50%;
   font-size: 50px;
   color: white;
