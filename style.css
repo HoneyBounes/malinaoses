@@ -59,17 +59,50 @@ background-color: red;
   -ms-transform: translate(-50%,-50%);
 }
 
+#text2{
+  position: absolute;
+  display: block;
+  top: 45%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#text3{
+  position: absolute;
+  display: block;
+  top: 60%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#text4{
+  position: absolute;
+  display: block;
+  top: 75%;
+  left: 50%;
+  font-size: 25px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
 .item1 { grid-area: deonica1; }
 .item2 { grid-area: deonica2 }
 .item3 { grid-area: deonica3; }
 .item4 { grid-area: novcanik;}
+.item5 {grid-area: deonica4;}
 
 .grid-container {
 display: grid;
 grid-template-areas:
-  'novcanik deonica1 deonica2 deonica3'
+  'novcanik deonica1 deonica2 deonica3 deonica4'
   ;
-gap: 1px;
+gap: 5px;
 background-color: #212385;
 padding: 10px;
 }
