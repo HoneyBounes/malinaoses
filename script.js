@@ -11,7 +11,7 @@ var deonica2slika = document.getElementById("slika2");
 var deonica3slika = document.getElementById("slika3");
 var deonica4slika = document.getElementById("slika4");
 
-//slike prodjae
+//slike prodaje
 var pdeonica1slika = document.getElementById("slika11");
 var pdeonica2slika = document.getElementById("slika12");
 var pdeonica3slika = document.getElementById("slika13");
@@ -28,6 +28,7 @@ var cdeonica1 = 1;
 var cdeonica2 = 2;
 var cdeonica3 = 3;
 var cdeonica4 = 4;
+var naplata = document.getElementById("naplataprogress");
 
 //interval popunjavanja
 var timeout = setTimeout(function(){
@@ -37,6 +38,48 @@ var timeout = setTimeout(function(){
     document.getElementById("cdeonica4").innerHTML = cdeonica4 + "&#128176;";
     document.getElementById("novcanik").innerHTML = novcanik + "&#128176;";
 },1);
+
+//interval gubljenja novca
+var interval = setInterval(function(){
+    if(novcanik>=200 && novcanik<250)
+    {
+        novcanik-=20;
+        document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+    }
+
+    else if(novcanik>=150 && novcanik<200)
+    {
+        novcanik-=15;
+        document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+    }
+
+    else if(novcanik>=100 && novcanik<150)
+    {
+        novcanik-=10;
+        document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+    }
+
+    else if(novcanik >= 50 &&novcanik<100)
+    {
+        novcanik-=5;
+        document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+    }
+    else
+    {
+        novcanik-=2;
+        document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+    }
+},20000)
+
+var interval = setInterval(function(){
+
+    naplata.value +=2.5;
+    if(naplata.value==100)
+    {
+        naplata.value = 0;
+    }
+
+},500)
 
 //interval menjanja cena
 var interval = setInterval(function(){
@@ -138,7 +181,7 @@ deonica3slika.onclick = function(){
 deonica4slika.onclick = function(){
     if(novcanik>=cdeonica4 && cdeonica4>=0){
     deonica4 += 1;
-    document.getElementById("brdeonica1").innerHTML = deonica1;
+    document.getElementById("brdeonica4").innerHTML = deonica4;
     novcanik -= cdeonica4;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     }
@@ -175,7 +218,7 @@ pdeonica3slika.onclick = function(){
 pdeonica4slika.onclick = function(){
     if(deonica4>0 && cdeonica4>=0){
     deonica4 -= 1;
-    document.getElementById("brdeonica1").innerHTML = deonica4;
+    document.getElementById("brdeonica4").innerHTML = deonica4;
     novcanik += cdeonica4;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     }
