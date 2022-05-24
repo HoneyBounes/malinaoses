@@ -41,44 +41,42 @@ var timeout = setTimeout(function(){
 
 //interval gubljenja novca
 var interval = setInterval(function(){
-    if(novcanik>=200 && novcanik<250)
-    {
-        novcanik-=20;
-        document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
-    }
-
-    else if(novcanik>=150 && novcanik<200)
-    {
-        novcanik-=15;
-        document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
-    }
-
-    else if(novcanik>=100 && novcanik<150)
-    {
-        novcanik-=10;
-        document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
-    }
-
-    else if(novcanik >= 50 &&novcanik<100)
-    {
-        novcanik-=5;
-        document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
-    }
-    else
-    {
-        novcanik-=2;
-        document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
-    }
-},20000)
-
-var interval = setInterval(function(){
 
     naplata.value +=2.5;
     if(naplata.value==100)
     {
+
+        if(novcanik>=200 && novcanik<250)
+        {
+            novcanik-=20;
+            document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+        }
+    
+        else if(novcanik>=150 && novcanik<200)
+        {
+            novcanik-=15;
+            document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+        }
+    
+        else if(novcanik>=100 && novcanik<150)
+        {
+            novcanik-=10;
+            document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+        }
+    
+        else if(novcanik >= 50 &&novcanik<100)
+        {
+            novcanik-=5;
+            document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+        }
+        else
+        {
+            novcanik-=2;
+            document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+        }
+
         naplata.value = 0;
     }
-
 },500)
 
 //interval menjanja cena
