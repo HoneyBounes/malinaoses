@@ -42,7 +42,7 @@ var timeout = setTimeout(function(){
 //interval gubljenja novca
 var interval = setInterval(function(){
 
-    naplata.value +=2.5;
+    naplata.value +=1;
     if(naplata.value==100)
     {
 
