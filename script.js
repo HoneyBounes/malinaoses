@@ -77,7 +77,7 @@ var interval = setInterval(function(){
 
         naplata.value = 0;
     }
-},500)
+},1000)
 
 //interval menjanja cena
 var interval = setInterval(function(){
