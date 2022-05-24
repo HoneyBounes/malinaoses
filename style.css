@@ -1,6 +1,7 @@
 h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(36, 27, 124);
+  color: rgb(27, 17, 122);
+  font-size: 20px;
 }
 
 a {
@@ -92,21 +93,26 @@ background-color: red;
   -ms-transform: translate(-50%,-50%);
 }
 
+.item4 { grid-area: novcanik;}
+
 .item1 { grid-area: deonica1; }
 .item2 { grid-area: deonica2 }
 .item3 { grid-area: deonica3; }
-.item4 { grid-area: novcanik;}
-.item5 {grid-area: deonica4;}
+.item5 { grid-area: deonica4;}
 
-.item6 {grid-area: naplata;}
+.item6 {grid-area: deonica5;}
+.item7 {grid-area: deonica6;}
+.item8 {grid-area: deonica7;}
+.item9 {grid-area: deonica8;}
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'novcanik deonica1 deonica2 deonica3 deonica4'
+    'novcanik deonica5 deonica6 deonica7 deonica8'
     ;
   gap: 5px;
-  background-color: #212385;
+  background-color: rgb(27, 17, 122);
   padding: 10px;
   }
 
@@ -124,7 +130,7 @@ font-size: 20px;
     'naplata naplata'
     ;
   gap: 5px;
-  background-color: #212385;
+  background-color: rgb(27, 17, 122);
   padding: 10px;
   }
 
