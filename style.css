@@ -140,3 +140,24 @@ font-size: 20px;
   padding: 20px;
   font-size: 20px;
   }
+
+  #index{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 40%;
+    font-size: 25px;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+
+  #index1{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 60%;
+    font-size: 25px;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+

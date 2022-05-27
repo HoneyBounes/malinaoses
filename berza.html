@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berza</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+
+  <div id="overlay" onclick="off()">
+    <div id="text"><b>Berza</b></div>
+    <div id="text1">Na početku, igrač dobija 8 &#128176;. Potrebno je konstantom kupovinom i prodajom deonica zaraditi što više &#128176;!</div>
+    <div id="text2">Postaraj se da broj &#128176; ne padne ispod 0, u tom dolazi do <u>bankrota</u>.</div>
+    <div id="text3">Svaka deonica menja svoju cenu u različitom vremenskom periodu.</div>
+    <div id="text4">Klikni bilo gde da zatvoriš ovaj prozor</div>
+  </div>
+
+  <div class="grid-container">
+
+    <div class="item1">
+      <h4 style="text-align: center;">Broj deonica 1</h4>
+      <p style="text-align: center;" id="brdeonica1">0</p>
+      <h4 style="text-align: center;">Cena deonice 1</h4>
+      <p style="text-align: center;" id="cdeonica1"></p>
+      <img id ="slika1" src="img/kupi.jpg"></img>
+      <img id ="slika11" src="img/prodaj.jpg"></img>
+    </div>
+
+    <div class="item2">
+      <h4 style="text-align: center;">Broj deonica 2</h4>
+      <p style="text-align: center;" id="brdeonica2">0</p>
+      <h4 style="text-align: center;">Cena deonice 2</h4>
+      <p style="text-align: center;" id="cdeonica2"></p>
+      <img id ="slika2" src="img/kupi.jpg"></img>
+      <img id ="slika12" src="img/prodaj.jpg"></img>
+    </div>
+
+    <div class="item3">
+      <h4 style="text-align: center;">Broj deonica 3</h4>
+      <p style="text-align: center;" id="brdeonica3">0</p>
+      <h4 style="text-align: center;">Cena deonice 3</h4>
+      <p style="text-align: center;" id="cdeonica3"></p>
+      <img id ="slika3" src="img/kupi.jpg"></img>
+      <img id ="slika13" src="img/prodaj.jpg"></img>
+    </div>  
+
+    <div class="item5">
+      <h4 style="text-align: center;">Broj deonica 4</h4>
+      <p style="text-align: center;" id="brdeonica4">0</p>
+      <h4 style="text-align: center;">Cena deonice 4</h4>
+      <p style="text-align: center;" id="cdeonica4"></p>
+      <img id ="slika4" src="img/kupi.jpg"></img>
+      <img id ="slika14" src="img/prodaj.jpg"></img>
+    </div>  
+
+    <div class="item4">
+      <h4 style="text-align: center;">Novčanik</h4>
+      <p style="text-align: center;" id="novcanik"></p>
+
+      <h4>Do sledeće <br>naplate usluga:</h4>
+      <progress id="naplataprogress" min = "0" max="100"></progress>
+    </div>
+
+
+    <div class="item6">
+      <h4 style="text-align: center;">Broj deonica 5</h4>
+      <p style="text-align: center;" id="brdeonica5">0</p>
+      <h4 style="text-align: center;">Cena deonice 5</h4>
+      <p style="text-align: center;" id="cdeonica5"></p>
+      <img id ="slika5" src="img/kupi.jpg"></img>
+      <img id ="slika15" src="img/prodaj.jpg"></img>
+    </div>
+
+    <div class="item7">
+      <h4 style="text-align: center;">Broj deonica 6</h4>
+      <p style="text-align: center;" id="brdeonica6">0</p>
+      <h4 style="text-align: center;">Cena deonice 6</h4>
+      <p style="text-align: center;" id="cdeonica6"></p>
+      <img id ="slika6" src="img/kupi.jpg"></img>
+      <img id ="slika16" src="img/prodaj.jpg"></img>
+    </div>
+
+    <div class="item8">
+      <h4 style="text-align: center;">Broj deonica 7</h4>
+      <p style="text-align: center;" id="brdeonica7">0</p>
+      <h4 style="text-align: center;">Cena deonice 7</h4>
+      <p style="text-align: center;" id="cdeonica7"></p>
+      <img id ="slika7" src="img/kupi.jpg"></img>
+      <img id ="slika17" src="img/prodaj.jpg"></img>
+    </div>
+
+    <div class="item9">
+      <h4 style="text-align: center;">Broj deonica 8</h4>
+      <p style="text-align: center;" id="brdeonica8">0</p>
+      <h4 style="text-align: center;">Cena deonice 8</h4>
+      <p style="text-align: center;" id="cdeonica8"></p>
+      <img id ="slika8" src="img/kupi.jpg"></img>
+      <img id ="slika18" src="img/prodaj.jpg"></img>
+    </div>
+</div>
+
+  <a href="berza.html"><p>Klik</p></a>
+  <script src="script.js"></script>
+</body>
+
+</html>
