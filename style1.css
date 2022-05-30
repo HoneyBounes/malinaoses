@@ -1,0 +1,107 @@
+h4 {
+    color: rgb(27, 17, 122);
+    font-size: 20px;
+  }
+
+  #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.911);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  #text{
+    position: absolute;
+    display: block;
+    top: 10%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  
+  #text1{
+    position: absolute;
+    display: block;
+    top: 25%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  
+  #text2{
+    position: absolute;
+    display: block;
+    top: 45%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  
+  #text3{
+    position: absolute;
+    display: block;
+    top: 60%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  
+  #text4{
+    position: absolute;
+    display: block;
+    top: 75%;
+    left: 50%;
+    font-size: 25px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  
+  .item4 { grid-area: novcanik;}
+  
+  .item1 { grid-area: deonica1; }
+  .item2 { grid-area: deonica2 }
+  .item3 { grid-area: deonica3; }
+  .item5 { grid-area: deonica4;}
+  
+  .item6 {grid-area: deonica5;}
+  .item7 {grid-area: deonica6;}
+  .item8 {grid-area: deonica7;}
+  .item9 {grid-area: deonica8;}
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'novcanik deonica1 deonica2 deonica3 deonica4'
+      'novcanik deonica5 deonica6 deonica7 deonica8'
+      ;
+    gap: 5px;
+    background-color: rgb(27, 17, 122);
+    padding: 10px;
+    }
+  
+  .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  }
+
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }

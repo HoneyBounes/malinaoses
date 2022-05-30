@@ -114,24 +114,6 @@ var interval = setInterval(function(){
     }  
 },1000)
 
-//interval menjanja cena
-
-//POPRAVI STO PRE
-/*
-var interval = setInterval(() => {
-    if(bool == true){
-    promena.value += 20;
-    if(promena.value == 100)
-    {
-        promena.value = 0;
-    }
-}
-}, 1000);
-
-<h4>Do sledeće <br>promene cena:</h4>
-      <progress id="naplataprogress1" min = "0" max="100"></progress>
-*/
-
 var interval = setInterval(function(){
     if(bool==true){
     var random = Math.random();
