@@ -430,3 +430,8 @@ pdeonica8slika.onclick = function(){
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     }
 }
+
+var siteWidth = 1280;
+var scale = screen.width /siteWidth;
+
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
