@@ -2,34 +2,34 @@
 var pozadinaid = 0;
 
 function promenapozadine() {
-  pozadinaid++;
-
-  if(pozadinaid==1)
-  {
-     document.body.style.backgroundImage = "url('img/pozadina2.jpg')";
-  }
-
-  else if(pozadinaid==2)
-  {
-     document.body.style.backgroundImage = "url('img/pozadina3.jpg')";
-  }
-
-  else if(pozadinaid==3)
-  {
-     document.body.style.backgroundImage = "url('img/pozadina4.jpg')";
-  }
-
-  else if(pozadinaid==4)
-  {
-     document.body.style.backgroundImage = "url('img/pozadina5.jpg')";
-  }
-
-  else
-  {
-      pozadinaid = 0;
-     document.body.style.backgroundImage = "url('img/pozadina1.jpg')";
-  }
-};
+    pozadinaid++;
+  
+    if(pozadinaid==1)
+    {
+       document.body.style.backgroundImage = "url('img/pozadina2.jpg')";
+    }
+  
+    else if(pozadinaid==2)
+    {
+       document.body.style.backgroundImage = "url('img/pozadina3.jpg')";
+    }
+  
+    else if(pozadinaid==3)
+    {
+       document.body.style.backgroundImage = "url('img/pozadina4.jpg')";
+    }
+  
+    else if(pozadinaid==4)
+    {
+       document.body.style.backgroundImage = "url('img/pozadina5.jpg')";
+    }
+  
+    else
+    {
+        pozadinaid = 0;
+       document.body.style.backgroundImage = "url('img/pozadina1.jpg')";
+    }
+  };
 
 //overlay
 function off() {
