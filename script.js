@@ -1,15 +1,12 @@
 //global
 
-localStorage.setItem("bool", 0);
-y = localStorage.getItem("bool");
-
-if(y == 0)
+if(localStorage.getItem("novcanik") == null)
 {
-   var x = parseFloat(localStorage.getItem("novcanik")).toFixed(2);
-   localStorage.setItem("bool", 1);
+   localStorage.setItem("novcanik",8);
 }
 
-   document.getElementById("novcanik").innerHTML = x + "&#128176;";
+var x = parseFloat(localStorage.getItem("novcanik")).toFixed(2);
+document.getElementById("novcanik").innerHTML = x + "&#128176;";
 
 //promena pozadine
 var pozadinaid = 0;
