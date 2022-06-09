@@ -5,6 +5,11 @@ if(localStorage.getItem("novcanik") == null)
    localStorage.setItem("novcanik",8);
 }
 
+function off() {
+    document.getElementById("overlay").style.display = "none";
+    bool = true;
+  };
+
 var x = parseFloat(localStorage.getItem("novcanik")).toFixed(2);
 document.getElementById("novcanik").innerHTML = x + "&#128176;";
 

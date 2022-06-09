@@ -3,7 +3,6 @@ function off() {
     document.getElementById("overlay").style.display = "none";
     bool = true;
   };
-document.getElementById("overlay").style.display = "block";
 
 //slike kupovine
 var deonica1slika = document.getElementById("slika1");
