@@ -5,13 +5,18 @@ if(localStorage.getItem("novcanik") == null)
    localStorage.setItem("novcanik",8);
 }
 
-function off() {
-    document.getElementById("overlay").style.display = "none";
-    bool = true;
-  };
-
 var x = parseFloat(localStorage.getItem("novcanik")).toFixed(2);
 document.getElementById("novcanik").innerHTML = x + "&#128176;";
+
+//off
+function off() {
+    document.getElementById("overlay").style.display = "none";
+  };
+
+function off1() {
+   document.getElementById("novcanikgrid").style.display = "none";
+   bool = true;
+ };
 
 //promena pozadine
 var pozadinaid = 0;
@@ -50,6 +55,12 @@ function promenapozadine() {
        document.body.style.backgroundImage = "url('img/pozadina1.jpg')";
     }
   };
+
+//pokazi novcanik
+var novcanikiko = document.getElementById("novcanikiko");
+novcanikiko.onclick = function(){
+   document.getElementById("novcanikgrid").style.display = "block";
+}
 
 //provera fullscreen-a
 /*

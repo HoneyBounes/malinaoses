@@ -99,3 +99,52 @@
     background-attachment: fixed;
     background-size: cover;
   }
+
+  #novcanikgrid {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #textnovcanik{
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+
+  .item1 { grid-area: novac; }
+  .item2 { grid-area: restart; }
+
+  .gridcontainer {
+    display: grid;
+    grid-template-areas:
+    'novac restart'
+      ;
+    gap: 5px;
+    background-color: rgb(41, 175, 63);
+    padding: 10px;
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    }
+
+    .gridcontainer > div {
+      background-color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+      }
