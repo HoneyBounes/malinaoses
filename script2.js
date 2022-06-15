@@ -1,10 +1,10 @@
-var options = ["$100", "$10", "$25", "$250", "$30", "$1000", "$1", "$200", "$45", "$500", "$5", "$20", "Lose", "$1000000", "Lose", "$350", "$5", "$99"];
+var options = ["-10💰","5💰","10💰","Izgubi sve 💰", "20💰","-15💰","50💰","-5💰","-15💰","100💰","-20💰"];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
 var spinTimeout = null;
 
-var spinArcStart = 10;
+var spinArcStart = 1;
 var spinTime = 0;
 var spinTimeTotal = 0;
 
@@ -37,17 +37,18 @@ function getColor(item, maxitem) {
 function drawRouletteWheel() {
   var canvas = document.getElementById("canvas");
   if (canvas.getContext) {
-    var outsideRadius = 200;
-    var textRadius = 160;
-    var insideRadius = 125;
+    var outsideRadius = 225;
+    var textRadius = 170;
+    var insideRadius = 130;
 
     ctx = canvas.getContext("2d");
     ctx.clearRect(0,0,500,500);
 
     ctx.strokeStyle = "black";
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 5;
 
     ctx.font = 'bold 12px Helvetica, Arial';
+    
 
     for(var i = 0; i < options.length; i++) {
       var angle = startAngle + i * arc;
@@ -61,8 +62,6 @@ function drawRouletteWheel() {
       ctx.fill();
 
       ctx.save();
-      ctx.shadowOffsetX = -1;
-      ctx.shadowOffsetY = -1;
       ctx.shadowBlur    = 0;
       ctx.shadowColor   = "rgb(220,220,220)";
       ctx.fillStyle = "black";
@@ -74,7 +73,7 @@ function drawRouletteWheel() {
       ctx.restore();
     } 
 
-    //Arrow
+    //strelica
     ctx.fillStyle = "black";
     ctx.beginPath();
     ctx.moveTo(250 - 4, 250 - (outsideRadius + 5));
