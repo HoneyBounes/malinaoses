@@ -3,6 +3,24 @@
 if(localStorage.getItem("novcanik") == null)
 {
    localStorage.setItem("novcanik",8);
+
+   localStorage.setItem("brdeonice1", 0);
+   localStorage.setItem("brdeonice2", 0);
+   localStorage.setItem("brdeonice3", 0);
+   localStorage.setItem("brdeonice4", 0);
+   localStorage.setItem("brdeonice5", 0);
+   localStorage.setItem("brdeonice6", 0);
+   localStorage.setItem("brdeonice7", 0);
+   localStorage.setItem("brdeonice8", 0);
+
+   localStorage.setItem("cenadeonice1", 1);
+   localStorage.setItem("cenadeonice2", 2);
+   localStorage.setItem("cenadeonice3", 3);
+   localStorage.setItem("cenadeonice4", 4);
+   localStorage.setItem("cenadeonice5", 5);
+   localStorage.setItem("cenadeonice6", 6);
+   localStorage.setItem("cenadeonice7", 7);
+   localStorage.setItem("cenadeonice8", 8);
 }
 
 var x = parseFloat(localStorage.getItem("novcanik")).toFixed(2);
@@ -25,6 +43,24 @@ var restart = document.getElementById("restart");
 restart.onclick = function() {
     localStorage.setItem("novcanik", 8);
     document.getElementById("novcanik").innerHTML = parseFloat(localStorage.getItem("novcanik")).toFixed(2) + "&#128176;";
+
+    localStorage.setItem("brdeonice1", 0);
+    localStorage.setItem("brdeonice2", 0);
+    localStorage.setItem("brdeonice3", 0);
+    localStorage.setItem("brdeonice4", 0);
+    localStorage.setItem("brdeonice5", 0);
+    localStorage.setItem("brdeonice6", 0);
+    localStorage.setItem("brdeonice7", 0);
+    localStorage.setItem("brdeonice8", 0);
+ 
+    localStorage.setItem("cenadeonice1", 1);
+    localStorage.setItem("cenadeonice2", 2);
+    localStorage.setItem("cenadeonice3", 3);
+    localStorage.setItem("cenadeonice4", 4);
+    localStorage.setItem("cenadeonice5", 5);
+    localStorage.setItem("cenadeonice6", 6);
+    localStorage.setItem("cenadeonice7", 7);
+    localStorage.setItem("cenadeonice8", 8);
 }
 
 function promenapozadine() {

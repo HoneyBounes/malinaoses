@@ -30,31 +30,42 @@ var pdeonica8slika = document.getElementById("slika18");
 var bool = false;
 var novcanik = parseFloat(localStorage.getItem("novcanik")).toFixed(2);
 
-var deonica1 = 0;
-var deonica2 = 0;
-var deonica3 = 0;
-var deonica4 = 0;
+var deonica1 = parseFloat(localStorage.getItem("brdeonice1"));
+var deonica2 = parseFloat(localStorage.getItem("brdeonice2"));
+var deonica3 = parseFloat(localStorage.getItem("brdeonice3"));
+var deonica4 = parseFloat(localStorage.getItem("brdeonice4"));
 
-var deonica5 = 0;
-var deonica6 = 0;
-var deonica7 = 0;
-var deonica8 = 0;
+var deonica5 = parseFloat(localStorage.getItem("brdeonice5"));
+var deonica6 = parseFloat(localStorage.getItem("brdeonice6"));
+var deonica7 = parseFloat(localStorage.getItem("brdeonice7"));
+var deonica8 = parseFloat(localStorage.getItem("brdeonice8"));
 
-var cdeonica1 = 1;
-var cdeonica2 = 2;
-var cdeonica3 = 3;
-var cdeonica4 = 4;
+var cdeonica1 = parseFloat(localStorage.getItem("cenadeonice1")).toFixed(2);
+var cdeonica2 = parseFloat(localStorage.getItem("cenadeonice2")).toFixed(2);
+var cdeonica3 = parseFloat(localStorage.getItem("cenadeonice3")).toFixed(2);
+var cdeonica4 = parseFloat(localStorage.getItem("cenadeonice4")).toFixed(2);
 
-var cdeonica5 = 5;
-var cdeonica6 = 6;
-var cdeonica7 = 7;
-var cdeonica8 = 8;
+var cdeonica5 = parseFloat(localStorage.getItem("cenadeonice5")).toFixed(2);
+var cdeonica6 = parseFloat(localStorage.getItem("cenadeonice6")).toFixed(2);
+var cdeonica7 = parseFloat(localStorage.getItem("cenadeonice7")).toFixed(2);
+var cdeonica8 = parseFloat(localStorage.getItem("cenadeonice8")).toFixed(2);
 
 var naplata = document.getElementById("naplataprogress");
 var promena = document.getElementById("naplataprogress1");
 
 //interval popunjavanja
 var timeout = setTimeout(function(){
+    document.getElementById("brdeonica1").innerHTML = deonica1;
+    document.getElementById("brdeonica2").innerHTML = deonica2;
+    document.getElementById("brdeonica3").innerHTML = deonica3;
+    document.getElementById("brdeonica4").innerHTML = deonica4;
+
+    document.getElementById("brdeonica5").innerHTML = deonica5;
+    document.getElementById("brdeonica6").innerHTML = deonica6;
+    document.getElementById("brdeonica7").innerHTML = deonica7;
+    document.getElementById("brdeonica8").innerHTML = deonica8;
+
+
     document.getElementById("cdeonica1").innerHTML = cdeonica1 + "&#128176;";
     document.getElementById("cdeonica2").innerHTML = cdeonica2 + "&#128176;";
     document.getElementById("cdeonica3").innerHTML = cdeonica3 + "&#128176;";
@@ -102,7 +113,7 @@ var interval = setInterval(function(){
             localStorage.setItem("novcanik", novcanik);
         }
     
-        else if(novcanik >= 50 &&novcanik<100)
+        else if(novcanik >= 50 && novcanik<100)
         {
             novcanik-=5;
             document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
@@ -120,139 +131,163 @@ var interval = setInterval(function(){
 },1000)
 
 var interval = setInterval(function(){
+    var x = parseFloat(cdeonica1);
     if(bool==true){
-    var random = Math.random();
-    random *= Math.round(Math.random()) ? 1 : -1;
-    cdeonica1 += random;
-    if(cdeonica1<-1)
-    {
-        cdeonica1 += 4;
-    }
-    if(cdeonica1>13)
-    {
-        cdeonica1 -= 6;
-    }
-    document.getElementById("cdeonica1").innerHTML = cdeonica1.toFixed(2) + "&#128176;";
+        var random = Math.random();
+        random *= Math.round(Math.random()) ? 1 : -1;
+        x += random;
+        if(x<-1)
+        {
+            x += 4;
+        }
+        if(x>13)
+        {
+            x -= 6;
+        }
+    cdeonica1 = x;
+    document.getElementById("cdeonica1").innerHTML = parseFloat(cdeonica1).toFixed(2) + "&#128176;";
+    localStorage.setItem("cenadeonice1", cdeonica1);
 }
 },5000);
 
 var interval = setInterval(function(){
+    var x = parseFloat(cdeonica2);
     if(bool==true){
-    var random1 = Math.random();
-    random1 *= Math.round(Math.random()) ? 1 : -1;
-    cdeonica2 += random1;
-    if(cdeonica2<-1)
-    {
-        cdeonica2 += 4;
-    }
-    if(cdeonica2>13)
-    {
-        cdeonica2 -= 6;
-    }
-    document.getElementById("cdeonica2").innerHTML = cdeonica2.toFixed(2) + "&#128176;";
+        var random = Math.random();
+        random *= Math.round(Math.random()) ? 1 : -1;
+        x += random;
+        if(x<-1)
+        {
+            x += 4;
+        }
+        if(x>13)
+        {
+            x -= 6;
+        }
+    cdeonica2 = x;
+    document.getElementById("cdeonica2").innerHTML = parseFloat(cdeonica2).toFixed(2) + "&#128176;";
+    localStorage.setItem("cenadeonice2", cdeonica2);
 }
 },5000);
 
 var interval = setInterval(function(){
+    var x = parseFloat(cdeonica3);
     if(bool==true){
-    var random2 = Math.random();
-    random2 *= Math.round(Math.random()) ? 1 : -1;
-    cdeonica3 += random2;
-    if(cdeonica3<-1)
-    {
-        cdeonica3 += 4;
-    }
-    if(cdeonica3>13)
-    {
-        cdeonica3 -= 6;
-    }
-    document.getElementById("cdeonica3").innerHTML = cdeonica3.toFixed(2) + "&#128176;";
+        var random = Math.random();
+        random *= Math.round(Math.random()) ? 1 : -1;
+        x += random;
+        if(x<-1)
+        {
+            x += 4;
+        }
+        if(x>13)
+        {
+            x -= 6;
+        }
+    cdeonica3 = x;
+    document.getElementById("cdeonica3").innerHTML = parseFloat(cdeonica3).toFixed(2) + "&#128176;";
+    localStorage.setItem("cenadeonice3", cdeonica3);
 }
 },5000);
 
 var interval = setInterval(function(){
+    var x = parseFloat(cdeonica4);
     if(bool==true){
-    var random = Math.random();
-    random *= Math.round(Math.random()) ? 1 : -1;
-    cdeonica4 += random;
-    if(cdeonica4<-1)
-    {
-        cdeonica4 += 4;
-    }
-    if(cdeonica4>13)
-    {
-        cdeonica4 -= 6;
-    }
-    document.getElementById("cdeonica4").innerHTML = cdeonica4.toFixed(2) + "&#128176;";
+        var random = Math.random();
+        random *= Math.round(Math.random()) ? 1 : -1;
+        x += random;
+        if(x<-1)
+        {
+            x += 4;
+        }
+        if(x>13)
+        {
+            x -= 6;
+        }
+    cdeonica4 = x;
+    document.getElementById("cdeonica4").innerHTML = parseFloat(cdeonica4).toFixed(2) + "&#128176;";
+    localStorage.setItem("cenadeonice4", cdeonica4);
 }
 },5000);
 
 
 var interval = setInterval(function(){
+    var x = parseFloat(cdeonica5);
     if(bool==true){
-    var random = Math.random();
-    random *= Math.round(Math.random()) ? 1 : -1;
-    cdeonica5 += random;
-    if(cdeonica5<-1)
-    {
-        cdeonica5 += 4;
-    }
-    if(cdeonica5>13)
-    {
-        cdeonica5 -= 6;
-    }
-    document.getElementById("cdeonica5").innerHTML = cdeonica5.toFixed(2) + "&#128176;";
+        var random = Math.random();
+        random *= Math.round(Math.random()) ? 1 : -1;
+        x += random;
+        if(x<-1)
+        {
+            x += 4;
+        }
+        if(x>13)
+        {
+            x -= 6;
+        }
+    cdeonica5 = x;
+    document.getElementById("cdeonica5").innerHTML = parseFloat(cdeonica5).toFixed(2) + "&#128176;";
+    localStorage.setItem("cenadeonice5", cdeonica5);
 }
 },5000);
 
 var interval = setInterval(function(){
+    var x = parseFloat(cdeonica6);
     if(bool==true){
-    var random1 = Math.random();
-    random1 *= Math.round(Math.random()) ? 1 : -1;
-    cdeonica6 += random1;
-    if(cdeonica6<-1)
-    {
-        cdeonica6 += 4;
-    }
-    if(cdeonica6>13)
-    {
-        cdeonica6 -= 6;
-    }
-    document.getElementById("cdeonica6").innerHTML = cdeonica6.toFixed(2) + "&#128176;";
+        var random = Math.random();
+        random *= Math.round(Math.random()) ? 1 : -1;
+        x += random;
+        if(x<-1)
+        {
+            x += 4;
+        }
+        if(x>13)
+        {
+            x -= 6;
+        }
+    cdeonica6 = x;
+    document.getElementById("cdeonica6").innerHTML = parseFloat(cdeonica6).toFixed(2) + "&#128176;";
+    localStorage.setItem("cenadeonice6", cdeonica6);
 }
 },5000);
 
 var interval = setInterval(function(){
+    var x = parseFloat(cdeonica7);
     if(bool==true){
-    var random2 = Math.random();
-    random2 *= Math.round(Math.random()) ? 1 : -1;
-    cdeonica7 += random2;
-    if(cdeonica7<-1)
-    {
-        cdeonica7 += 4;
-    }
-    if(cdeonica7>13)
-    {
-        cdeonica7 -= 6;
-    }
-    document.getElementById("cdeonica7").innerHTML = cdeonica7.toFixed(2) + "&#128176;";
+        var random = Math.random();
+        random *= Math.round(Math.random()) ? 1 : -1;
+        x += random;
+        if(x<-1)
+        {
+            x += 4;
+        }
+        if(x>13)
+        {
+            x -= 6;
+        }
+    cdeonica7 = x;
+    document.getElementById("cdeonica7").innerHTML = parseFloat(cdeonica7).toFixed(2) + "&#128176;";
+    localStorage.setItem("cenadeonice7", cdeonica7);
 }
 },5000);
 
 var interval = setInterval(function(){
+    var x = parseFloat(cdeonica8);
     if(bool==true){
-    var random = Math.random();
-    random *= Math.round(Math.random()) ? 1 : -1;
-    cdeonica8 += random;
-    if(cdeonica8<-1)
-    {
-        cdeonica8 += 4;
-    }
-    if(cdeonica8>13)
-    {
-        cdeonica8 -= 6;
-    }
-    document.getElementById("cdeonica8").innerHTML = cdeonica8.toFixed(2) + "&#128176;";
+        var random = Math.random();
+        random *= Math.round(Math.random()) ? 1 : -1;
+        x += random;
+        if(x<-1)
+        {
+            x += 4;
+        }
+        if(x>13)
+        {
+            x -= 6;
+        }
+    cdeonica8 = x;
+    document.getElementById("cdeonica8").innerHTML = parseFloat(cdeonica8).toFixed(2) + "&#128176;";
+    localStorage.setItem("cenadeonice8", cdeonica8);
 }
 },5000);
 
@@ -264,6 +299,7 @@ deonica1slika.onclick = function(){
     novcanik -= cdeonica1;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice1", deonica1);
     }
 }
 
@@ -274,6 +310,7 @@ deonica2slika.onclick = function(){
     novcanik -= cdeonica2;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice2", deonica2);
     }
 }
 
@@ -284,6 +321,7 @@ deonica3slika.onclick = function(){
     novcanik -= cdeonica3;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice3", deonica3);
     }
 }
 
@@ -294,6 +332,7 @@ deonica4slika.onclick = function(){
     novcanik -= cdeonica4;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice4", deonica4);
     }
 }
 
@@ -305,6 +344,7 @@ deonica5slika.onclick = function(){
     novcanik -= cdeonica5;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice5", deonica5);
     }
 }
 
@@ -315,6 +355,7 @@ deonica6slika.onclick = function(){
     novcanik -= cdeonica6;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice6", deonica6);
     }
 }
 
@@ -325,6 +366,7 @@ deonica7slika.onclick = function(){
     novcanik -= cdeonica7;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice7", deonica7);
     }
 }
 
@@ -335,6 +377,7 @@ deonica8slika.onclick = function(){
     novcanik -= cdeonica8;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice8", deonica8);
     }
 }
 //prodaja deonica
@@ -345,6 +388,7 @@ pdeonica1slika.onclick = function(){
     novcanik += cdeonica1;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice1", deonica1);
     }
 }
 
@@ -355,6 +399,7 @@ pdeonica2slika.onclick = function(){
     novcanik += cdeonica2;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice2", deonica2);
     }
 }
 
@@ -365,6 +410,7 @@ pdeonica3slika.onclick = function(){
     novcanik += cdeonica3;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice3", deonica3);
     }
 }
 
@@ -375,6 +421,7 @@ pdeonica4slika.onclick = function(){
     novcanik += cdeonica4;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice4", deonica4);
     }
 }
 
@@ -386,6 +433,7 @@ pdeonica5slika.onclick = function(){
     novcanik += cdeonica5;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice5", deonica5);
     }
 }
 
@@ -396,6 +444,7 @@ pdeonica6slika.onclick = function(){
     novcanik += cdeonica6;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice6", deonica6);
     }
 }
 
@@ -406,6 +455,7 @@ pdeonica7slika.onclick = function(){
     novcanik += cdeonica3;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice7", deonica7);
     }
 }
 
@@ -416,5 +466,6 @@ pdeonica8slika.onclick = function(){
     novcanik += cdeonica8;
     document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
     localStorage.setItem("novcanik", novcanik);
+    localStorage.setItem("brdeonice8", deonica8);
     }
 }
