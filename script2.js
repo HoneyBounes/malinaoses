@@ -1,3 +1,6 @@
+var novcanik = parseFloat(localStorage.getItem("novcanik")).toFixed(2);
+document.getElementById("novcanik").innerHTML = novcanik + "&#128176;";
+
 var options = ["-10💰","5💰","10💰","Izgubi sve 💰", "20💰","-15💰","50💰","-5💰","-15💰","100💰","-20💰"];
 
 var startAngle = 0;
@@ -89,10 +92,21 @@ function drawRouletteWheel() {
 }
 
 function spin() {
+  if(novcanik>=5)
+  {
+  novcanik-=5;
+  localStorage.setItem("novcanik", novcanik);
+  document.getElementById("novcanik").innerHTML = parseFloat(novcanik).toFixed(2) + "&#128176;";
+
   spinAngleStart = Math.random() * 10 + 10;
   spinTime = 0;
   spinTimeTotal = Math.random() * 3 + 4 * 1000;
   rotateWheel();
+  }
+  else
+  {
+    alert("Nemate dovoljno novca!");
+  }
 }
 
 function rotateWheel() {
@@ -117,6 +131,74 @@ function stopRotateWheel() {
   var text = options[index]
   ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
   ctx.restore();
+
+  switch(index) {
+    case 0:
+      novcanik-=10;
+      localStorage.setItem("novcanik", novcanik);
+      document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+      break;
+
+    case 1:
+      novcanik+=5;
+      localStorage.setItem("novcanik", novcanik);
+      document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+      break;
+
+    case 2:
+      novcanik+=10;
+      localStorage.setItem("novcanik", novcanik);
+      document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+      break;
+
+    case 3:
+      novcanik = 0;
+      localStorage.setItem("novcanik", novcanik);
+      document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+      break;
+
+    case 4:
+      novcanik+=20;
+      localStorage.setItem("novcanik", novcanik);
+      document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+      break;
+
+    case 5:
+      novcanik-=15;
+      localStorage.setItem("novcanik", novcanik);
+      document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+      break;
+
+    case 6:
+      novcanik+=50;
+      localStorage.setItem("novcanik", novcanik);
+      document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+      break;
+    
+    case 7:
+      novcanik-=5;
+      localStorage.setItem("novcanik", novcanik);
+      document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+      break;
+
+    case 8:
+      novcanik-=15;
+      localStorage.setItem("novcanik", novcanik);
+      document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+      break;
+
+    case 9:
+      novcanik+=100;
+      localStorage.setItem("novcanik", novcanik);
+      document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+      break;
+
+    case 10:
+      novcanik-=20;
+      localStorage.setItem("novcanik", novcanik);
+      document.getElementById("novcanik").innerHTML = novcanik.toFixed(2) + "&#128176;";
+      break;
+  }
 }
 
 function easeOut(t, b, c, d) {
