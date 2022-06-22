@@ -3,7 +3,7 @@ function off() {
     document.getElementById("overlay").style.display = "none";
     bool = true;
   };
-
+/*copyrightmixa*/
 //slike kupovine
 var deonica1slika = document.getElementById("slika1");
 var deonica2slika = document.getElementById("slika2");
@@ -78,7 +78,7 @@ var timeout = setTimeout(function(){
 
     document.getElementById("novcanik").innerHTML = novcanik + "&#128176;";
 },1);
-
+/*copyrightmixa*/
 //interval gubljenja novca
 var interval = setInterval(function(){
     if(bool==true){
@@ -169,7 +169,7 @@ var interval = setInterval(function(){
     localStorage.setItem("cenadeonice2", cdeonica2);
 }
 },5000);
-
+/*copyrightmixa*/
 var interval = setInterval(function(){
     var x = parseFloat(cdeonica3);
     if(bool==true){
@@ -270,7 +270,7 @@ var interval = setInterval(function(){
     localStorage.setItem("cenadeonice7", cdeonica7);
 }
 },5000);
-
+/*copyrightmixa*/
 var interval = setInterval(function(){
     var x = parseFloat(cdeonica8);
     if(bool==true){
@@ -358,7 +358,7 @@ deonica6slika.onclick = function(){
     localStorage.setItem("brdeonice6", deonica6);
     }
 }
-
+/*copyrightmixa*/
 deonica7slika.onclick = function(){
     if(novcanik>=cdeonica7 && cdeonica7>=0){
     deonica7 += 1;
@@ -424,7 +424,7 @@ pdeonica4slika.onclick = function(){
     localStorage.setItem("brdeonice4", deonica4);
     }
 }
-
+/*copyrightmixa*/
 
 pdeonica5slika.onclick = function(){
     if(deonica5>0 && cdeonica5>=0){
@@ -469,3 +469,4 @@ pdeonica8slika.onclick = function(){
     localStorage.setItem("brdeonice8", deonica8);
     }
 }
+/*copyrightmixa*/
