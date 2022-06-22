@@ -1,5 +1,4 @@
-# simulacijaberze
-Malina OS - simulacija rada kockarskih igara.
+# Malina OS - simulacija rada kockarskih igara.
 
 Projekat je ostvaren sa ~1200 linija koda i 23 slike.
 
